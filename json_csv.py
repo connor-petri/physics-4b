@@ -1,3 +1,5 @@
+# This is a tool to convert "key": [list] JSON format to CSV format.
+# This is only designed to be used for this lab and will not work for all JSON formats.
 import json
 import csv
 import sys
