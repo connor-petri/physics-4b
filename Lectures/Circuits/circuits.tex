@@ -2,9 +2,13 @@
 \usepackage{graphicx} % Required for inserting images
 \usepackage{amsmath, amssymb, amsthm}
 
-\title{Circuits}
+\title{
+    PHYS4B Electromagnitism for Scientists and Engineers:\\
+    \vspace{12pt}
+    Circuits
+}
 \author{Connor Petri}
-\date{2025-02-05}
+\date{Winter 2025}
 
 \begin{document}
 
@@ -15,10 +19,12 @@
 
 
 \begin{center}
-\section{Current}
+\section{Current and Resistance}
+\hrulefill
+\subsection*{Current}
 \end{center}
 
-\subsection*{Definition}
+\subsubsection*{Definition}
 \hspace{.5cm} Current is defined as the time rate of change of charge through an object. It is measured in amps.
 
 \vbox{
@@ -35,7 +41,7 @@ $v_d$ is the drift velocity in $m/s$, and $A$ is the cross-sectional area of the
 }
 
 
-\subsection*{Drift Velocity}
+\subsubsection*{Drift Velocity}
 Electrons are bouncing around randomly. When an electric field is applied, the bouncing is directed 
 in a direction, but it is still chaotic. This bouncing results in heat being generated. Heat is defined 
 as the kinetic energy of a particle. The speed of the drift of the electrons is called the drift velocity $(v_d)$.
@@ -52,7 +58,7 @@ Where $v_d$ is the drift current, n is the free electron density, q is the charg
 
 
 
-\subsection*{Current Density}
+\subsubsection*{Current Density}
 \hspace{.5cm} Current density is the current per unit area. It is defined as:\\
 \vbox{
     \large\center
@@ -72,10 +78,10 @@ Voltage can be calculated as a function of current density and conductivity as f
 \hrulefill
 
 \begin{center}
-\section{Resistance}
+\subsection*{Resistance}
 \end{center}
 
-\subsection*{Definition}
+\subsubsection*{Definition}
 Resistance is defined as the ratio of voltage to current, also known as Ohm's law. It is measured in ohms.\\
 
 \vbox{
@@ -86,7 +92,7 @@ Resistance is defined as the ratio of voltage to current, also known as Ohm's la
 Where $R$ is the resistance in ohms, $\Delta V$ is the voltage in volts, and $I$ is the current in amps.\\
 
 
-\subsection*{Resistivity}
+\subsubsection*{Resistivity}
 
 \hspace{.5cm} Resistivity is the fundimental property of a material that determines how much it resists the flow of current. 
 It is measured in ohm-meters.
@@ -103,10 +109,10 @@ Where $\rho$ is resistivity, $\sigma$ is conductivity, R is resistance in $\Omeg
     $[\Omega] = [\frac{V}{A}]$
 }\vspace{12pt}
 
-\subsection*{Ohmic vs. Non-Ohmic devices}
+\subsubsection*{Ohmic vs. Non-Ohmic devices}
 \hspace{.5cm} Ohmic devices are devices that have a Voltage vs Current slope of $\frac{1}{R}$. Non-ohmic devices have a slope that changes with voltage or current.\\
 
-\subsection*{Resistance and Temperature}
+\subsubsection*{Resistance and Temperature}
 \vbox{
     \large\center
     $\rho = \rho_0[1+\alpha (T-T_0)]$\\
@@ -117,14 +123,27 @@ Where $\rho$ is resistivity, $\sigma$ is conductivity, R is resistance in $\Omeg
 
 Where $\rho$ is resistivity and $T$ is temperature.
 
+\vspace{12pt}
+\hrulefill
 
-\section{Electrical Power}
-$\frac{dU_e}{dt} = \frac{d}{dt} (Q\Delta V) = \frac{dQ}{dt}\Delta V = I\Delta V$
-\newline\newline
-$\Rightarrow P = I\Delta V \Rightarrow P = I^2R = \frac{(\Delta V)^2}{R}$
+\begin{center}
+\subsection*{Electrical Power}
+\end{center}
+
+\subsubsection*{Definition}
+\hspace{.5cm} Power is defined as the rate at which energy is transferred or converted. It is measured in watts.\\
+\vbox{
+    \large\center
+    $P = \frac{dU_e}{dt} = \frac{d}{dt} (Q\Delta V) = \frac{dQ}{dt}\Delta V = I\Delta V$
+}
+
+\vbox{
+    \large\center
+    $\Longrightarrow P = I^2R = \frac{(\Delta V)^2}{R}$
+}
+\vspace{12pt}
 
 Where $P$ is power in watts, $Q$ is total charge in Coulombs, $\Delta V$ is voltage in volts, and $I$ is current in amps.
-\newline
 
 
 \end{document}

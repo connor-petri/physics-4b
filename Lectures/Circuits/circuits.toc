@@ -1,3 +1,1 @@
-\contentsline {section}{\numberline {1}Current}{2}{}%
-\contentsline {section}{\numberline {2}Resistance}{3}{}%
-\contentsline {section}{\numberline {3}Electrical Power}{4}{}%
+\contentsline {section}{\numberline {1}Current and Resistance}{2}{}%
