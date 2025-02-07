@@ -1,0 +1,146 @@
+
+
+\begin{center}
+    \section{Capacitors}
+    \hrulefill
+    \subsection*{Capacitance}
+\end{center}
+
+Capacitors are devices that can store charge. They are made of one or more pairs of conductors seperated by an insulator. In circuit diagrams, they are denoted using the following symbol:\\
+
+\vbox{    
+    \center
+    \begin{circuitikz}
+        \draw (0,0) to[C] (2,0);
+    \end{circuitikz}
+}
+
+
+\subsubsection*{Definition}
+Capacitance is the ability of a capacitor to store charge. It is measured in farads.\\
+
+\vbox{
+    \large\center
+    $C = \frac{Q}{\Delta V} = \epsilon_0 \frac{A}{d}$
+}
+\vspace{12pt}
+
+Where $C$ is capacitance in farads, $Q$ is charge in Coulombs, $\Delta V$ is voltage in volts, $\epsilon_0$ is the permittivity of free space, $A$ is the area of the plates in $m^2$, and $d$ is the distance between the plates in meters.\\
+
+
+\subsubsection*{Electric Field Within a Capacitor}
+
+\hspace{.5cm} The electric field within a capacitor is given by the equation:
+
+\vbox {
+    \large\center
+    $E = \frac{\sigma}{\epsilon_0} = \frac{Q}{\epsilon_0 A}$
+}
+\vspace{12pt}
+
+Where $E$ is the electric field in $N/C$, $\sigma$ is the charge density in $C/m^2$, $Q$ is the charge in Coulombs, $\epsilon_0$ is the permittivity of free space, and $A$ is the area of the plates in $m^2$.\\
+
+
+\subsubsection*{Voltage Across a Capacitor}
+
+\hspace{.5cm} The voltage across a capacitor is given by the equation:\\
+
+\vbox {
+    \large\center
+    $\Delta V = Ed = \frac{Qd}{\epsilon_0 A}$
+}
+\vspace{12pt}
+
+Where $\Delta V$ is the voltage in volts, $E$ is the electric field in $N/C$, $d$ is the distance between the plates in meters, $Q$ is the charge in Coulombs, $\epsilon_0$ is the permittivity of free space, and $A$ is the area of the plates in $m^2$.\\
+
+
+\subsubsection*{Energy Stored in a Capacitor}
+\hspace{.5cm} The electric potential energy stored in a capacitor is given by the equation:\\
+\vbox {
+    \large\center
+    $U_e = \frac{1}{2}Q\Delta V = \frac{1}{2}C\Delta V^2 = \frac{Q^2}{2C}$
+}
+\vspace{12pt}
+
+Where $U_e$ is the electric potential energy in Joules, $Q$ is the charge in Coulombs, $\Delta V$ is the voltage in volts, $C$ is the capacitance in farads, and $V$ is the voltage in volts.\\
+
+\vspace{12pt}
+\hrulefill
+
+\begin{center}
+    \subsection*{Dielectrics}
+\end{center}
+
+\hspace{.5cm} Up until this point, we have made the assumption that the conductors in the capacitor have been seperated by air, however this is not always the case. Dielectrics are insulating materials that are placed between the plates of a capacitor. 
+They increase the capacitance of a capacitor by a factor of $\kappa$, or the dielectric constant of that material. $\kappa$ is a direct property of a material that has been determined through experimentation, and thus this value will have to be given
+in the problem or retrieved from a table.\\
+\pagebreak
+
+\subsubsection*{Capacitance and Electric Field with a Dielectric}
+\hspace{.5cm} When a dielectric is placed between the plates of a capacitor, the capacitance and electric field change based off of the dielectric constant.\\
+\vbox{
+    \large\center
+    $C_\kappa \propto \kappa$\\
+    $E_\kappa \propto \frac{1}{\kappa}$\\
+}
+
+This changes the equations for capacitance, electric field, and voltage across a capacitor to the following:\\
+\vbox{
+    \large\center
+    $C_\kappa = \kappa C_0 = \frac{\kappa Q}{\Delta V}$\\
+    \vspace{6pt}
+    $E_\kappa = \frac{\sigma}{\kappa \epsilon_0} = \frac{Q}{\kappa \epsilon_0 A}$\\
+    \vspace{6pt}
+    $\Delta V_\kappa = E_\kappa d = \frac{Qd}{\kappa \epsilon_0 A}$
+}
+\vspace{12pt}
+
+\newpage
+
+\begin{center}
+    \subsection*{Capacitors in Series and Parallel}
+\end{center}
+
+\begin{figure}[h]
+    \centering
+    \begin{circuitikz}
+        \draw 
+        (0,3) to[battery] (0, 0)
+        (0,3) -- (2,3)
+        (2,3) to[C, l=$C_1$] (2,1.25)
+        (2,2) to[C, l=$C_2$] (2,.25)
+        (2,.25) -- (2, 0)
+        (0,0) -- (2,0)
+        ;
+    \end{circuitikz}
+    \caption{Wired in series.}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \begin{circuitikz}
+        \draw
+        (0,2) to[battery] (0,0)
+        (0,2) -- (4, 2)
+        (2, 2) to[C, l=$C_1$] (2,0)
+        (4,2) to[C, l=$C_2$] (4,0)
+        (0,0) -- (4,0)
+        ;
+    \end{circuitikz}
+    \caption{Wired in parallel.}
+\end{figure}
+
+\subsubsection*{Equivilant Capacitance}
+\hspace{.5cm} When capacitors are wired in parallel, the equivilant capacitance is given by the equation:\\
+\vbox{
+    \large\center
+    $C_{eq} = \sum_{i=1}^{n} C_i$
+}
+\vspace{12pt}
+
+\hspace{.5cm} When capacitors are wired in series, the equivilant capacitance is given by the equation:\\
+\vbox{
+    \large\center
+    $\frac{1}{C_{eq}} = \sum_{i=1}^{n} \frac{1}{C_i}$
+}
+
