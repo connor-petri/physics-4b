@@ -3,7 +3,6 @@
 \begin{center}
     \section{Capacitors}
     \hrulefill
-    \subsection*{Capacitance}
 \end{center}
 
 Capacitors are devices that can store charge. They are made of one or more pairs of conductors seperated by an insulator. In circuit diagrams, they are denoted using the following symbol:\\
@@ -15,7 +14,11 @@ Capacitors are devices that can store charge. They are made of one or more pairs
     \end{circuitikz}
 }
 
+\vspace{12pt}
 
+\begin{center}
+    \subsection*{Capacitance}
+\end{center}
 \subsubsection*{Definition}
 Capacitance is the ability of a capacitor to store charge. It is measured in farads.
 
@@ -64,7 +67,7 @@ Where $\Delta V$ is the voltage in volts, $E$ is the electric field in $N/C$, $d
 }
 \vspace{12pt}
 
-Where $U_e$ is the electric potential energy in Joules, $Q$ is the charge in Coulombs, $\Delta V$ is the voltage in volts, $C$ is the capacitance in farads, and $V$ is the voltage in volts.\\
+Where $U_e$ is the electric potential energy in Joules, $Q$ is the charge in Coulombs, $\Delta V$ is the voltage in volts and $C$ is the capacitance in farads\\
 
 \vspace{12pt}
 \hrulefill
@@ -102,11 +105,9 @@ This changes the equations for capacitance, electric field, and voltage across a
 \begin{center}
     \subsection*{Capacitors in Series and Parallel}
 \end{center}
-
-\begin{figure}[h]
-    \centering
+\begin{figure}
+    \center
     \begin{circuitikz}
-        \draw 
         (0,3) to[battery] (0, 0)
         (0,3) -- (2,3)
         (2,3) to[C, l=$C_1$] (2,1.25)
