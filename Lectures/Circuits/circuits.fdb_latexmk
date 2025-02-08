@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1738986511.50758 "/home/connor/School/physics-4b/Lectures/Circuits/circuits.tex" "circuits.pdf" "circuits" 1738986511.87784 0
+["pdflatex"] 1738986963.89678 "/home/connor/School/physics-4b/Lectures/Circuits/circuits.tex" "circuits.pdf" "circuits" 1738986964.27822 0
   "/etc/texmf/web2c/texmf.cnf" 1737016392.62408 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/connor/School/physics-4b/Lectures/Circuits/circuits.tex" 1738886094.74084 434 a3843bbac24304d5f3517f52a0535cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -147,12 +147,12 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1737016399.74308 128028 f533b797fba58d231669ea19e894e23e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1737016413 6851227 1be1a9b3503346a5a0dd35950d0233f8 ""
-  "circuits.aux" 1738986511.84145 106 4841069b741dd619e77ce54f461be862 "pdflatex"
+  "circuits.aux" 1738986964.24376 106 4841069b741dd619e77ce54f461be862 "pdflatex"
   "circuits.tex" 1738886094.74084 434 a3843bbac24304d5f3517f52a0535cab ""
-  "circuits.toc" 1738986511.84245 126 d4991b23d331515b18cd4a4a47536716 "pdflatex"
-  "sections/capacitors.aux" 1738986511.83645 915 eeec45f2c2664c21b56783040cc87bd7 "pdflatex"
-  "sections/capacitors.tex" 1738986511.35744 4787 61253952ec1ff4e33c94aebfdd462167 ""
-  "sections/current_resistance.aux" 1738986511.84145 695 6abff3b1af6627befed01eb77b21473e "pdflatex"
+  "circuits.toc" 1738986964.24476 126 d4991b23d331515b18cd4a4a47536716 "pdflatex"
+  "sections/capacitors.aux" 1738986964.23876 915 eeec45f2c2664c21b56783040cc87bd7 "pdflatex"
+  "sections/capacitors.tex" 1738986963.75275 4880 e10f0c9651b92474739bb9b79a55e2ed ""
+  "sections/current_resistance.aux" 1738986964.24376 695 6abff3b1af6627befed01eb77b21473e "pdflatex"
   "sections/current_resistance.tex" 1738986244.84362 4077 f5ef5e1e5f33075330d95fa76b6c55dc ""
   (generated)
   "circuits.aux"
