@@ -105,10 +105,11 @@ This changes the equations for capacitance, electric field, and voltage across a
 \begin{center}
     \subsection*{Capacitors in Series and Parallel}
 \end{center}
-\begin{figure}
-    \center
+
+\begin{figure}[h]
+    \centering
     \begin{circuitikz}
-        (0,3) to[battery] (0, 0)
+        \draw (0,3) to[battery] (0, 0)
         (0,3) -- (2,3)
         (2,3) to[C, l=$C_1$] (2,1.25)
         (2,2) to[C, l=$C_2$] (2,.25)
