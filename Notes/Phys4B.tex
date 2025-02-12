@@ -4,6 +4,31 @@
 \usepackage{amsmath, amssymb, amsthm}
 \usepackage{circuitikz, subcaption}
 \usepackage{gensymb}
+\usepackage{titlesec}
+
+
+\titleformat{\section}
+[block]
+{\huge\bfseries\center}
+{\thesection.\ }
+{0pt}
+{}
+
+\titleformat{\subsection}
+[block]
+{\Huge\center}
+{}
+{0pt}
+{}
+
+\titleformat{\subsubsection}
+[block]
+{\large\bfseries\center}
+{}
+{0pt}
+{}
+
+
 
 \title{PHYS4B Electromagnitism for Scientists and Engineers}
 \author{Connor Petri}
@@ -13,11 +38,18 @@
 
 \maketitle
 \tableofcontents
+
 \pagebreak
 
-\include{Electrostatics/intro_to_electrostatics}
+\section{Electrostatics}
 
-\include{Circuits/capacitors}
+\input{Electrostatics/intro_to_electrostatics}
+
+\include{Electrostatics/electric_fields}
+
+\section{Circuits}
+
+\input{Circuits/capacitors}
 
 \include{Circuits/current_resistance}
 
