@@ -1,10 +1,12 @@
 \documentclass[12pt, letterpaper]{article}
 
 \usepackage{graphicx} % Required for inserting images
+\graphicspath{{./images/}}
+
 \usepackage{amsmath, amssymb, amsthm}
 \usepackage{circuitikz, subcaption}
 \usepackage{gensymb}
-\usepackage{titlesec}
+\usepackage{titlesec, wrapfig}
 
 
 \titleformat{\section}
@@ -43,14 +45,14 @@
 
 \section{Electrostatics}
 
-\input{Electrostatics/intro_to_electrostatics}
+\input{electrostatics/intro_to_electrostatics}
 
-\include{Electrostatics/electric_fields}
+\include{electrostatics/electric_fields}
 
 \section{Circuits}
 
-\input{Circuits/capacitors}
+\input{circuits/capacitors}
 
-\include{Circuits/current_resistance}
+\include{circuits/current_resistance}
 
 \end{document}
