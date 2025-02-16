@@ -1,0 +1,97 @@
+\subsection*{Direct Current Circuits}
+\hrulefill
+
+\subsubsection*{Electromotive Force}
+\paragraph*{Definition}
+Electromotive force (emf) is the voltage produced by a battery or generator. It is measured in volts. 
+The emf of a circuit is the total voltage supplied by the battery or generator.
+
+\begin{align*}
+    \Delta V &= \varepsilon - Ir\\
+    \varepsilon &= IR + Ir\\
+    I &= \frac{\varepsilon}{R+r}
+\end{align*}
+
+Where $\Delta V$ is the voltage in volts, $\varepsilon$ is the emf in volts, $I$ is the current in amps, 
+and $R$ and $r$ are resistors in ohms.
+
+\begin{figure}[h]
+\centering
+\begin{circuitikz}
+    \draw (1,0) to[battery, l=$\varepsilon$] (0,0)
+    (1,0) -- (2,0) to[R, l=$r$] (3,0) -- (4,0)
+    -- (4,-2) -- (3,-2) to[R, l=$R$] (1,-2) -- (0,-2) -- (0,0)
+    ;
+\end{circuitikz}
+\end{figure}
+
+\paragraph*{Power}
+:
+
+\begin{align*}
+    P_R &= I^2R\\
+    P_r &= I^2r
+\end{align*}
+
+\subsubsection*{Equivilant Resistance}
+
+\ \ \ \ Much like capacitors, multiple resistors can be represented by a single resistor with an equivilant resistance. 
+
+\paragraph*{In Series}
+
+\begin{align*}
+    R_{eq(s)} &= \sum_{i=1}^{n} R_i\\
+    I_{eq(s)} &= I_1 = I_2 = \cdots = I_n\\
+    \Delta V_{eq(s)} &= \sum_{i=1}^{n} \Delta V_i
+\end{align*}
+
+\paragraph*{In Parallel}
+\begin{align*}
+    \frac{1}{R_{eq(\parallel)}} &= \sum_{i=1}^{n} \frac{1}{R_i}\\
+    I_{eq(\parallel)} &= \sum_{i=1}^{n} I_i\\
+    \Delta V_{eq(\parallel)} &= \Delta V_1 = \Delta V_2 = \cdots = \Delta V_n
+\end{align*}
+
+
+\subsubsection*{Kirchhoff's Laws}
+
+\paragraph*{Junction Rule}
+At any junction in a circuit, the sum of the currents must equal zero.
+
+\begin{equation*}
+    \sum_{junction} I = 0 \quad \Longrightarrow \quad \sum_{junction} I_{in} = \sum_{junction} I_{out}
+\end{equation*}
+
+\paragraph*{Loop Rule}
+The sum of the voltages around any closed loop in a circuit must equal zero.
+
+\begin{equation*}
+    \sum_{closed loop} \Delta V = 0
+\end{equation*}
+
+\paragraph*{Sign Conventions}
+\begin{itemize}
+    \item If the current enters the positive terminal of a resistor, it is positive.
+    \item If the current enters the negative terminal of a resistor, it is negative.
+    \item If the current enters the positive terminal of a battery, it is negative.
+    \item If the current enters the negative terminal of a battery, it is positive.
+\end{itemize}
+
+\hrulefill
+
+\paragraph*{Charging a Capacitor}
+
+\begin{align*}
+    Q_{max} &= C\varepsilon\\
+    I &= \frac{dq}{dt} = -\frac{q-C\varepsilon}{RC}\\
+    q(t) &= C\varepsilon(1-e^{-\frac{t}{RC}}) = Q_{max}(1-e^{-\frac{t}{RC}})\\
+    i(t) &= \frac{dq}{dt} = \frac{\varepsilon}{R}e^{-\frac{t}{RC}}\\
+\end{align*}
+
+
+\paragraph*{Discharging a Capacitor}
+\begin{align*}
+    q(t) &= Q_ie^{-\frac{t}{RC}}\\
+    i(t) &= -\frac{Q_i}{RC}e^{-\frac{t}{RC}}\\
+\end{align*}
+
