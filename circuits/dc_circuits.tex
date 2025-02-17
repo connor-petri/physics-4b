@@ -1,4 +1,4 @@
-\subsection*{Direct Current Circuits}
+\subsection{Direct Current Circuits}
 \hrulefill
 
 \subsubsection*{Electromotive Force}
@@ -18,26 +18,45 @@ and $R$ and $r$ are resistors in ohms.
 \begin{figure}[h]
 \centering
 \begin{circuitikz}
-    \draw (1,0) to[battery, l=$\varepsilon$] (0,0)
-    (1,0) -- (2,0) to[R, l=$r$] (3,0) -- (4,0)
-    -- (4,-2) -- (3,-2) to[R, l=$R$] (1,-2) -- (0,-2) -- (0,0)
+    \draw 
+    (0,3.25) to[battery, l=$\varepsilon$] (0,1.75)
+    (0,3.25) -- (2,3.25) to[R, l=$R$] (3,3.25) -- (4,3.25)
+    -- (4,1.75) -- (3,1.75) to[R, l=$r$] (2,1.75) -- (0,1.75)
     ;
 \end{circuitikz}
 \end{figure}
 
+
 \paragraph*{Power}
-:
+The power delevered to each of the resistors in the above circuit is given by the following equations.
 
 \begin{align*}
     P_R &= I^2R\\
     P_r &= I^2r
 \end{align*}
 
+Note that the specific current value used will depend on how the resistors in the circuit are connected.
+
+
 \subsubsection*{Equivilant Resistance}
 
 \ \ \ \ Much like capacitors, multiple resistors can be represented by a single resistor with an equivilant resistance. 
 
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{0.4\textwidth}
+        \begin{circuitikz}
+            \draw
+            (0,0) node[[font=\footnotesize]label=above:$a$]{} -- (1,0) to[R, l=$R_1$] (2,0) -- (3,0) to[R, l=$R_2$] (4,0) -- (5,0) node[label=above:$b$]{}
+            ;
+        \end{circuitikz}
+    \end{subfigure}
+\end{figure}
+
+
 \paragraph*{In Series}
+Resistors in series can be combined into a single resistor with a resistance equal to the sum of the individual resistances.
+The current through each resistor in series is the same, but the voltage across each resistor is different.
 
 \begin{align*}
     R_{eq(s)} &= \sum_{i=1}^{n} R_i\\
@@ -46,11 +65,16 @@ and $R$ and $r$ are resistors in ohms.
 \end{align*}
 
 \paragraph*{In Parallel}
+Resistors in parallel can be combined into a single resistor with a resistance equal to the reciprocal of the sum of the reciprocals 
+of the individual resistances. The voltage across each resistor in parallel is the same, but the current through each resistor is different.
+
 \begin{align*}
     \frac{1}{R_{eq(\parallel)}} &= \sum_{i=1}^{n} \frac{1}{R_i}\\
     I_{eq(\parallel)} &= \sum_{i=1}^{n} I_i\\
     \Delta V_{eq(\parallel)} &= \Delta V_1 = \Delta V_2 = \cdots = \Delta V_n
 \end{align*}
+
+\pagebreak
 
 
 \subsubsection*{Kirchhoff's Laws}
