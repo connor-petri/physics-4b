@@ -209,8 +209,8 @@ is the electromotive force in volts.\\
 We can then find the charge and current of the capacitor as a function of time.
 
 \begin{align*}
-    q(t) &= C\varepsilon(1-e^{-\frac{t}{\tau}}) \quad \Rightarrow \quad Q_{max}(1-e^{-\frac{t}{\tau}})\\
-    i(t) &= \frac{dq}{dt} = \frac{\varepsilon}{R}e^{-\frac{t}{\tau}}\\
+    q(t) \quad &= \quad C\varepsilon(1-e^{-t/\tau}) \quad = \quad Q_{max}(1-e^{-t/\tau})\\
+    I(t) \quad &= \quad \frac{dq}{dt} \quad = \quad \frac{\varepsilon}{R}e^{-t/\tau} \quad = \quad \frac{q(t) - Q_{max}}{\tau}\\
 \end{align*}
 
 Where $q(t)$ is the charge on the capacitor at time $t$ in Coulombs, $i(t)$ is the current through the capacitor at time $t$ in Amps,
@@ -221,8 +221,8 @@ and $\tau$ is the time constant of the circuit in seconds.
 We can also find the charge and current of a capacitor as it discharges as a function of time.
 
 \begin{align*}
-    q(t) &= Q_ie^{-\frac{t}{\tau}}\\
-    i(t) &= -\frac{Q_i}{\tau}e^{-\frac{t}{\tau}}\\
+    q(t) &= Q_ie^{-t/\tau}\\
+    i(t) &= -\frac{Q_i}{\tau}e^{-t/\tau}\\
 \end{align*}
 
 Where $Q_i$ is the initial charge on the capacitor in Coulombs, and the rest of teh variables having the same definition as above.
