@@ -195,17 +195,34 @@ total resistance and capacitance in the circuit.
 Where $\tau$ is the time constant in seconds, $R$ is the resistance in ohms, and $C$ is the capacitance in farads. 
 
 \paragraph*{Charging a Capacitor}
+First, we must update our max charge equation to account for emf.
+
+\begin{equation*}
+    Q_{max} = C\varepsilon
+\end{equation*}
+
+Where $Q_{max}$ is the max charge the capacitor can hold in Coulombs, C is the capacitance of the capacitor in Farads, and $\varepsilon$
+is the electromotive force in volts.\\
+
+\pagebreak
+
+We can then find the charge and current of the capacitor as a function of time.
 
 \begin{align*}
-    Q_{max} &= C\varepsilon\\
-    I &= \frac{dq}{dt} = -\frac{q-C\varepsilon}{RC}\\
-    q(t) &= C\varepsilon(1-e^{-\frac{t}{RC}}) = Q_{max}(1-e^{-\frac{t}{RC}})\\
-    i(t) &= \frac{dq}{dt} = \frac{\varepsilon}{R}e^{-\frac{t}{RC}}\\
+    q(t) &= C\varepsilon(1-e^{-\frac{t}{\tau}}) \quad \Rightarrow \quad Q_{max}(1-e^{-\frac{t}{\tau}})\\
+    i(t) &= \frac{dq}{dt} = \frac{\varepsilon}{R}e^{-\frac{t}{\tau}}\\
 \end{align*}
+
+Where $q(t)$ is the charge on the capacitor at time $t$ in Coulombs, $i(t)$ is the current through the capacitor at time $t$ in Amps,
+$C$ is the capacitance of the capacitor in Farads, $\varepsilon$ is the electromotive force in volts, $R$ is the resistance in ohms,
+and $\tau$ is the time constant of the circuit in seconds.
 
 \paragraph*{Discharging a Capacitor}
+We can also find the charge and current of a capacitor as it discharges as a function of time.
+
 \begin{align*}
-    q(t) &= Q_ie^{-\frac{t}{RC}}\\
-    i(t) &= -\frac{Q_i}{RC}e^{-\frac{t}{RC}}\\
+    q(t) &= Q_ie^{-\frac{t}{\tau}}\\
+    i(t) &= -\frac{Q_i}{\tau}e^{-\frac{t}{\tau}}\\
 \end{align*}
 
+Where $Q_i$ is the initial charge on the capacitor in Coulombs, and the rest of teh variables having the same definition as above.
