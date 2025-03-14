@@ -29,25 +29,65 @@ Note that if there is no current, $\mu_0 I = 0$, and the Ampere-Maxwell Law simp
 
 \subsubsection*{Electromagnetic Wave Equation}
 The electromagnetic wave equation is a second-order partial differential equation that describes how electromagnetic waves propagate through space.
+Assuming that the wave is propagating in the $x$ direction, the wave equation is given by the following system of equations.
 
 \begin{align*}
+    \large
+\begin{cases}
     \frac{\partial^2\vec{E}}{\partial x^2} &= \mu_0\varepsilon_0\frac{\partial^2\vec{E}}{\partial t^2}\\
     \frac{\partial^2\vec{B}}{\partial x^2} &= \mu_0\varepsilon_0\frac{\partial^2\vec{B}}{\partial t^2}\\
+    \frac{\partial^2 \vec{y}}{\partial x^2} &= \frac{1}{v^2}(\frac{\partial^2 \vec{y}}{\partial t^2})
+\end{cases}
 \end{align*}
     
 Where $\vec{E}$ is the electric field in volts per meter, $\vec{B}$ is the magnetic field in teslas, $x$ is the position in meters, $t$ is the time 
-in seconds, $\mu_0$ is the permeability of free space in henries per meter, and $\varepsilon_0$ is the permittivity of free space in farads per meter.\\
+in seconds, $\mu_0$ is the permeability of free space in henries per meter, $y$ is the wave function, $x$ is the position in meters and $\varepsilon_0$ 
+is the permittivity of free space in farads per meter.\\
 
 \paragraph{The Speed of Light}
-The speed of light is the speed at which electromagnetic waves propagate through space. It is given by the following equation.
+The speed of light is the speed at which electromagnetic waves propagate through space. It is given by the following equation when the wave is propogating
+through a vaccum.
 
 \begin{align*}
-    \frac{\partial^2 y}{\partial x^2} &= \frac{1}{v}(\frac{\partial^2 y}{\partial t^2})\\
-    c &= \frac{1}{\sqrt{\mu_0\varepsilon_0}}
+    c_{vac} &= \frac{1}{\sqrt{\mu_0\varepsilon_0}} = 3.00 \times 10^8 \text{ m/s}
 \end{align*}
 
-Where $y$ is the wave function, $x$ is the position in meters, $t$ is the time in seconds, $v$ is the velocity of the wave in meters per second,
-and $c$ is the speed of light in meters per second.\\
+\paragraph*{Solution to the Wave Equation}
 
-\paragraph*{Solutions to the Wave Equation}
-The general solution to the wave equation is a sinusoidal wave. The wave function is given by the following equation.
+\begin{align*}
+    \frac{E_{max}}{B_{max}} &= c
+\end{align*}
+
+\paragraph{Poynting Vector}
+The Poynting vector is a vector that describes the direction and magnitude of the energy flow in an electromagnetic wave. It is given by the following equation.
+
+\begin{align*}
+    \vec{S} &= \frac{1}{\mu_0}\vec{E} \times \vec{B}
+\end{align*}
+
+Where $\vec{S}$ is the Poynting vector in watts per square meter, $\vec{E}$ is the electric field in volts per meter, $\vec{B}$ is the magnetic field in teslas,
+and $\mu_0$ is the permeability of free space in henries per meter.
+
+
+\paragraph{Energy Carried by Electromagnetic Waves}
+The energy carried by an electromagnetic wave is given by the following equation.
+
+\begin{align*}
+    U_E &= \frac{1}{2}\varepsilon_0E_{max}^2\\
+    U_B &= \frac{1}{2\mu_0}B_{max}^2\\
+    I &= S_{avg} = \frac{cB_{max}^2}{2\mu_0} = \frac{c}{U_{avg}}
+\end{align*}
+
+\paragraph{Momentum and Radiation Pressure}
+Electromagnetic waves carry momentum and exert a pressure on objects they interact with. The momentum carried by an electromagnetic wave is given by the following 
+equations.
+
+\begin{align*}
+    P &= \frac{S}{c} &\text{(Complete Absorption)}\\
+    P &= \frac{2S}{c} &\text{(Complete Reflection)}\\
+    P &= (1 + f) \frac{S}{c} &\text{(Partial Absorption)}
+\end{align*}
+
+Where $P$ is the momentum in newton-seconds, $S$ is the Poynting vector in watts per square meter, $c$ is the speed of light in meters per second, 
+and $f$ is the fraction of the wave that is absorbed (check this one for accuracy).
+
