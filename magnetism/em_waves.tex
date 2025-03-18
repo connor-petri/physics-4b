@@ -9,10 +9,10 @@ and magnetic fields interact with each other.
 \paragraph*{Maxwell's Equations}
 
 \begin{align*}
-    \oint \vec{E} \cdot d\vec{A} &= \frac{Q_{enc}}{\varepsilon_0} &\text{Gauss's Law}\\
-    \oint \vec{B} \cdot d\vec{A} &= 0 &\text{Gauss's Law in Magnetism}\\
-    \oint \vec{E} \cdot d\vec{\ell} &= -\frac{d\Phi_B}{dt} &\text{Faraday's Law}\\
-    \oint \vec{B} \cdot d\vec{\ell} &= \mu_0 I + \varepsilon_0\mu_0\frac{d\Phi_E}{dt} &\text{Ampere-Maxwell Law}
+    \oint \vec{E} \cdot d\vec{A} \quad &= \quad \frac{Q_{enc}}{\varepsilon_0} &\text{Gauss's Law}\\
+    \oint \vec{B} \cdot d\vec{A} \quad &= \quad 0 &\text{Gauss's Law in Magnetism}\\
+    \oint \vec{E} \cdot d\vec{\ell} \quad &= \quad -\frac{d\Phi_B}{dt} &\text{Faraday's Law}\\
+    \oint \vec{B} \cdot d\vec{\ell} \quad &= \quad \mu_0 I + \varepsilon_0\mu_0\frac{d\Phi_E}{dt} &\text{Ampere-Maxwell Law}
 \end{align*}
 
 Where $\vec{E}$ is the electric field in volts per meter, $\vec{B}$ is the magnetic field in teslas, $d\vec{A}$ is an infinitesimal 
@@ -27,17 +27,28 @@ Note that if there is no current, $\mu_0 I = 0$, and the Ampere-Maxwell Law simp
 
 \pagebreak
 
+\paragraph{Wait a second \ldots How does an EM wave exist in the absence of charge or current?}
+This can be explained using Maxwell's third and fourth equations. Note that I have rewritten them using divergence ($\nabla \cdot$) and curl ($\nabla \times$) notation.
+Divergence is a measure of how much a vector field is spreading out from a center point, and curl is a measure of how much a vector field is rotating around a point.
+
+\begin{align*}
+    \nabla \times \vec{E} &= -\frac{\partial\vec{B}}{\partial t}\\
+    \nabla \times \vec{B} &= \varepsilon_0\mu_0\frac{\partial \vec{E}}{\partial t}
+\end{align*}
+
+Try to think of the left side of the equation as the effect of what the right side of the equation causes. Faraday's Law states that a change in the magnetic field causes
+a change in the electric field, causing it to bend. The Ampere-Maxwell Law states that a change in the electric field causes a change in the magnetic field, causing it to bend.
+This means that once an electromagnetic wave is generated, it can propagate through space without the need for a charge or current to sustain it, as the constant changes in both
+fields will keep the wave moving.
+
 \subsubsection*{Electromagnetic Wave Equation}
 The electromagnetic wave equation is a second-order partial differential equation that describes how electromagnetic waves propagate through space.
 Assuming that the wave is propagating in the $x$ direction, the wave equation is given by the following system of equations.
 
 \begin{align*}
-    \large
-\begin{cases}
     \frac{\partial^2\vec{E}}{\partial x^2} &= \mu_0\varepsilon_0\frac{\partial^2\vec{E}}{\partial t^2}\\
     \frac{\partial^2\vec{B}}{\partial x^2} &= \mu_0\varepsilon_0\frac{\partial^2\vec{B}}{\partial t^2}\\
     \frac{\partial^2 \vec{y}}{\partial x^2} &= \frac{1}{v^2}(\frac{\partial^2 \vec{y}}{\partial t^2})
-\end{cases}
 \end{align*}
     
 Where $\vec{E}$ is the electric field in volts per meter, $\vec{B}$ is the magnetic field in teslas, $x$ is the position in meters, $t$ is the time 
@@ -52,10 +63,17 @@ through a vaccum.
     c_{vac} &= \frac{1}{\sqrt{\mu_0\varepsilon_0}} = 3.00 \times 10^8 \text{ m/s}
 \end{align*}
 
+The speed of light can also be calculated in terms of wavelength and frequency using the following equation.
+\begin{align*}
+    c &= \lambda f \quad \Rightarrow \quad f = \frac{c}{\lambda} \quad \Rightarrow \quad \lambda = \frac{c}{f}
+\end{align*}
+
+Where $c$ is the speed of light in meters per second, $\lambda$ is the wavelength in meters, and $f$ is the frequency in hertz.\\
+
 \paragraph*{Solution to the Wave Equation}
 
 \begin{align*}
-    \frac{E_{max}}{B_{max}} &= c
+    c = \frac{E_{max}}{B_{max}} \quad \Rightarrow \quad E_{max} = cB_{max} \quad \Rightarrow \quad B_{max} = \frac{E_{max}}{c}
 \end{align*}
 
 \paragraph{Poynting Vector}
